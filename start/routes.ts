@@ -21,6 +21,8 @@ router
 
     router.get('login', [controllers.Session, 'create'])
     router.post('login', [controllers.Session, 'store'])
+    // Route permettant de voir les détails d'un enseignant
+    router.get('/teacher/:id/show', [TeachersController, 'show']).as('teacher.show')
   })
   .use(middleware.guest())
 router
