@@ -11,6 +11,8 @@ export type ScannedRoutes = {
     'session.store': { paramsTuple?: []; params?: {} }
     'teacher.show': { paramsTuple: [ParamValue]; params: {'id': ParamValue} }
     'teacher.destroy': { paramsTuple: [ParamValue]; params: {'id': ParamValue} }
+    'teacher.create': { paramsTuple?: []; params?: {} }
+    'teacher.store': { paramsTuple?: []; params?: {} }
     'session.destroy': { paramsTuple?: []; params?: {} }
   }
   GET: {
@@ -18,16 +20,19 @@ export type ScannedRoutes = {
     'new_account.create': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
     'teacher.show': { paramsTuple: [ParamValue]; params: {'id': ParamValue} }
+    'teacher.create': { paramsTuple?: []; params?: {} }
   }
   HEAD: {
     'home': { paramsTuple?: []; params?: {} }
     'new_account.create': { paramsTuple?: []; params?: {} }
     'session.create': { paramsTuple?: []; params?: {} }
     'teacher.show': { paramsTuple: [ParamValue]; params: {'id': ParamValue} }
+    'teacher.create': { paramsTuple?: []; params?: {} }
   }
   POST: {
     'new_account.store': { paramsTuple?: []; params?: {} }
     'session.store': { paramsTuple?: []; params?: {} }
+    'teacher.store': { paramsTuple?: []; params?: {} }
     'session.destroy': { paramsTuple?: []; params?: {} }
   }
   DELETE: {
